@@ -2,7 +2,8 @@
 A vvvv gamma wrapper for the open source RogueSharp library by Faron Bracy
 
 Original library and documentation https://github.com/FaronBracy/RogueSharp
-Using nuget version 5.0.0 pre2 https://www.nuget.org/packages/RogueSharp/5.0.0-pre2
+
+Using this version of the library: nuget 5.0.0 pre2 https://www.nuget.org/packages/RogueSharp/5.0.0-pre2
 
 //APPLICATION
 RogueSharp has functions useful for reasoning about 2D grids where some cells are walkable or transaprent. 
