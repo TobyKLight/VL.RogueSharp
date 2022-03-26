@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="NaX2PldZcC3MlENhzPlijS" LanguageVersion="2021.4.7.906" Version="0.128">
+  <Patch Id="COAyH358kZhPVyA0iHxASb">
+    <Canvas Id="Q9djCdr2DcWP6TlZoPImG2" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="VKAOrrifVzLLjit5cPfNOl">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="VltiJwnAr5XPZFCiQ6vzVc">
+        <Canvas Id="NLLDggIJmc0OByoBsi9dWi" CanvasType="Group">
+          <Overlay Id="CVe73fsvMSbLWytT89XObO" Name="How To Roll Dice" Bounds="180,99,538,485">
+            <p:ColorIndex p:Type="Int32">3</p:ColorIndex>
+          </Overlay>
+          <Pad Id="A479eWTSI7BLQTOOjPbKy9" Comment="Dice Notation Expression" Bounds="332,145,69,15" ShowValueBox="true" isIOBox="true" Value="2d6">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="315,268,89,88" Id="OI1fVBHCbLwQKsSWsVpFJM">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:NodeReference>
+            <Pin Id="QveJHIf4aq8Mt4aPBVrMMV" Name="Force" Kind="InputPin" />
+            <Pin Id="Fm0Gqq1GXOmNy8clyrK5DQ" Name="Dispose Cached Outputs" Kind="InputPin" />
+            <Pin Id="Ef294eUU1toOjwlTQMeQCF" Name="Has Changed" Kind="OutputPin" />
+            <ControlPoint Id="FHgo2If7wYgMYWPU0PY8KV" Bounds="330,275" Alignment="Top" />
+            <ControlPoint Id="PHCkoBF5pmEOY1vmAQSntb" Bounds="330,350" Alignment="Bottom" />
+            <ControlPoint Id="HLjECWSG6bfPpavXSshvmy" Bounds="351,350" Alignment="Bottom" />
+            <Patch Id="BEO6Lt68SpxNB5QcfXvSTu" ManuallySortedPins="true">
+              <Patch Id="P6l0ZTWGKAVNVGHoizjX5V" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="RgA4vpiWPpUNjBCH7UGkhO" Name="Then" ManuallySortedPins="true" />
+              <Node Bounds="327,301,53,19" Id="U4pEgESZXxuOxFq6tSYx1g">
+                <p:NodeReference LastCategoryFullName="RogueSharp.Dice" LastSymbolSource="VL.RogueSharp.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="ProcessAppFlag" Name="DiceRoll" />
+                </p:NodeReference>
+                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+                <Pin Id="ScYXwrL9l07ON9mCNEmDuP" Name="Expression" Kind="InputPin" />
+                <Pin Id="SnjfBhC1ojPQWaAIP4imrQ" Name="Result" Kind="OutputPin" />
+                <Pin Id="L0bQCFJVI7XMHXe0JgaaDA" Name="MinRoll" Kind="OutputPin" />
+                <Pin Id="FnF4PMqGPaMOqtGnltA9VO" Name="MaxRoll" Kind="OutputPin" />
+                <Pin Id="NuJ81XxAYvTQdY6CzisZre" Name="Error" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <ControlPoint Id="C9BGcJxvkJRNxPrpBsgl94" Bounds="370,350" Alignment="Bottom" />
+            <ControlPoint Id="NvyMz8I7wjkOKh7ndBytbo" Bounds="389,350" Alignment="Bottom" />
+          </Node>
+          <Pad Id="MBDvXMxDtooPBmVAUVwocX" Comment="Result" Bounds="326,399,65,25" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">12</p:fontsize>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="MRaqcUxnQPPMMjl7rKBE1u" Comment="Roll Again" Bounds="315,218,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Av1B9aTt4RHLZ0h1BBbfur" Bounds="444,195,307,19" ShowValueBox="true" isIOBox="true" Value="for valid expression examples see &#xD;&#xA;">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="R1ZWYXbk6n8MhVT6RNHYRc" Bounds="447,215,246,21" ShowValueBox="true" isIOBox="true" Value="https://ripcode.net/p/dicenotation">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="H8B20GPDdHDOooFVoIiAsa" Comment="Minimum possible roll" Bounds="351,439,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="CY1LadoUVLFN2JaclRfKGj" Comment="Maximum Possible Roll" Bounds="374,464,39,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="UWYCAwUZ8gfLvwJskxEEum" Comment="Error if it does not like your expression" Bounds="392,499,102,12" ShowValueBox="true" isIOBox="true" Value="text">
+            <p:TypeAnnotation>
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+              <FullNameCategoryReference ID="Primitive" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Si3F5TKRgFTPhDElkwrhjl" Bounds="442,262,237,136" ShowValueBox="true" isIOBox="true" Value="Note that combining multiple dice rolls has a different probability distribution then 'plain' random number generation.&#xD;&#xA;&#xD;&#xA;Eg probability of snake eyes on 2d6 is not 1/12 but 1/36">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="RWAQ1I31xB4PJPkftR0TwN" Name="Create" />
+        <Patch Id="DGO8FS5lvVNLtWVewGvH2P" Name="Update" />
+        <ProcessDefinition Id="MS1Qh6leCozQPxBJc8XFue">
+          <Fragment Id="JV0leqvjHCeNz9UaBjxn08" Patch="RWAQ1I31xB4PJPkftR0TwN" Enabled="true" />
+          <Fragment Id="T36GCVhY1qfMbCQ8dFHF7y" Patch="DGO8FS5lvVNLtWVewGvH2P" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="Han7MQ1kUiGOTtV1983tNj" Ids="A479eWTSI7BLQTOOjPbKy9,FHgo2If7wYgMYWPU0PY8KV" />
+        <Link Id="VVnjBkpTFUoP7RQQUWH4Hi" Ids="FHgo2If7wYgMYWPU0PY8KV,ScYXwrL9l07ON9mCNEmDuP" />
+        <Link Id="Hx40JutGVHgLMHtEFRs82o" Ids="SnjfBhC1ojPQWaAIP4imrQ,PHCkoBF5pmEOY1vmAQSntb" />
+        <Link Id="QMGJPRnxNZFMBgHSZ0REuR" Ids="PHCkoBF5pmEOY1vmAQSntb,MBDvXMxDtooPBmVAUVwocX" />
+        <Link Id="St7EjTX4obPLQ1zy8kVAli" Ids="MRaqcUxnQPPMMjl7rKBE1u,QveJHIf4aq8Mt4aPBVrMMV" />
+        <Link Id="DBtZcy4lVWPLmnlcsqaRfC" Ids="L0bQCFJVI7XMHXe0JgaaDA,HLjECWSG6bfPpavXSshvmy" />
+        <Link Id="NF7xNV0FbnxLdOZIgtBloN" Ids="HLjECWSG6bfPpavXSshvmy,H8B20GPDdHDOooFVoIiAsa" />
+        <Link Id="LjUrDM4X49ZO22zjr6GbPe" Ids="FnF4PMqGPaMOqtGnltA9VO,C9BGcJxvkJRNxPrpBsgl94" />
+        <Link Id="PDKDi5RXSLaNe4FiPbUbHN" Ids="C9BGcJxvkJRNxPrpBsgl94,CY1LadoUVLFN2JaclRfKGj" />
+        <Link Id="JstQ9NmxuU6Odu7ji6KLPz" Ids="NuJ81XxAYvTQdY6CzisZre,NvyMz8I7wjkOKh7ndBytbo" />
+        <Link Id="Hjt86CYZ0avOPFEsYgLPlG" Ids="NvyMz8I7wjkOKh7ndBytbo,UWYCAwUZ8gfLvwJskxEEum" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="OzO89Wl2tWjNX9q18JSs5Q" Location="VL.CoreLib" Version="2021.4.7" />
+  <NugetDependency Id="LHjVmZv3rOcPIdR2VtxzN7" Location="VL.RogueSharp" Version="0.0.0.0" />
+  <NugetDependency Id="DePoAaQrbi1LUSw4ZdVDCq" Location="RogueSharp" Version="5.0.0-pre2" />
+</Document>
