@@ -9,9 +9,9 @@ Using this version of the library: nuget 5.0.0 pre2 https://www.nuget.org/packag
 RogueSharp has functions useful for reasoning about 2D grids where some cells are walkable or transaprent. 
 For example pathfinding and field of view. 
 Also includes a dice rolling function. 
-Comes with a quick and dirty ASCII renderer of the maps, it's expected you would probably take the data 
+Comes with a quick and dirty ASCII renderer of the maps using VL.Skia, it's expected most users would take the map data and plug it into their own prettier drawing system.
 
-It's originally intended for game development of roguelikes.
+RoegueSharp is originally intended for game development of roguelikes.
 
 <TODO: GIF EXAMPLES> 
 
