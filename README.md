@@ -23,5 +23,4 @@ RoegueSharp is originally intended for game development of roguelikes.
 
 
 //LICENCE 
-MIT
-<TODO: LICENCE LINK> 
+Released under MIT Licence 
