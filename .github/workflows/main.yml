@@ -17,3 +17,9 @@ jobs:
 
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
+      
+   - name: Publish VL Nuget
+      uses: vvvv/PublishVLNuget@1.0.40
+      with:
+        nuspec: deployment\VL.RogueSharp.nuspec
+        nuget-key: ${{ secrets.NUGET_KEY }}
