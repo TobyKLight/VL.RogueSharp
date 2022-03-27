@@ -1,10 +1,10 @@
 name: push_nuget
 
-# on push on master
+# on push on main
 on:
   push:
     branches:
-      - master
+      - main
     paths-ignore:
       - README.md
 
