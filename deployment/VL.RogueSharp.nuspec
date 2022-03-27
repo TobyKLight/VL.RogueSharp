@@ -12,7 +12,6 @@
     <description>Pathfinding and line of sight functions on a 2D grid, originally intended for roguelike game development</description>
     <tags>VL, vvvv, Roguelike, pathfinding, navigation, dice</tags>
 	<license type="expression">MIT</license>
-	<icon>icon\nugeticon.png</icon>
 	<dependencies>
       <dependency id="RogueSharp" version="[5.0.0-pre2]" />
     </dependencies>
@@ -20,6 +19,5 @@
   <files>
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />
-	<file src="nugeticon.png" target="icon\" />
   </files>
 </package>
