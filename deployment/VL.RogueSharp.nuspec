@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.RogueSharp</id>
-    <version>1.0.0</version>
+    <version>1.0.1-pre</version>
     <title>VL.RogueSharp</title>
     <authors>Faron Bracy, TobyK</authors>
     <owners>TobyKLight</owners>
