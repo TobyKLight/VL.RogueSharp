@@ -20,9 +20,11 @@ Also includes a dice rolling function.
 VL.RogueSharp comes with a quick and dirty ASCII preview of the maps using VL.Skia. This is for preview purposes only, it's expected most users would take the map data and plug it into their own prettier drawing system.
 
 Pathfinding 
+
 ![PathFinding](https://user-images.githubusercontent.com/4467208/160279650-d17d9547-f492-4a94-b411-cde4496013b8.gif)
 
 Field Of View
+
 ![FieldOfView](https://user-images.githubusercontent.com/4467208/160279651-b63cb7f4-a68d-4f96-8ff4-1676af9eed08.gif)
 
 ------------------------
