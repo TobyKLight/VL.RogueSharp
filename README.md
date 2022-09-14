@@ -1,7 +1,7 @@
 # VL.RogueSharp
 A vvvv gamma wrapper for the open source RogueSharp library by Faron Bracy
 
-Nuget https://www.nuget.org/packages/VL.RogueSharp/1.0.1-pre
+Nuget https://www.nuget.org/packages/VL.RogueSharp/
 
 -----------------------
 //ORIGIN
@@ -32,7 +32,7 @@ Field Of View
 
 -Install VL.RogueSharp via nuget 
 In VVVV Gamma open the top left 'grey square' menu > Manage nugets > Commandline
-type 'nuget install VL.RogueSharp -Version 1.0.1-pre'
+type 'nuget install VL.RogueSharp -Version 1.0.2-pre'
 
 -Open the vvvv gamma help browser and search 'Roguesharp' for example patches 
 
