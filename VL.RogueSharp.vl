@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="S5lv4Zp15MwQSxw5b0uHn3" LanguageVersion="2021.4.7.906" Version="0.128">
+<Document xmlns:p="property" Id="S5lv4Zp15MwQSxw5b0uHn3" LanguageVersion="2021.4.10.1043" Version="0.128">
   <Patch Id="Rg1uRDUtkc7NnVj3UZDkXI">
     <Canvas Id="Pz0jajKyz5DNzTGw0tUj2Z" DefaultCategory="RogueSharp" CanvasType="FullCategory">
       <!--
@@ -666,6 +666,19 @@
               <Pin Id="EXyZrTJUUhjP2Hje2Dzmeq" Name="IsTransparentList" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="HfnvanSddnILkyTvEKdCit" Bounds="994,1339" />
+            <Overlay Id="QO88YkaYRO8OgPv8aAOP5H" Name="Clone" Bounds="36,269,321,173" />
+            <Pad Id="BNtLNFVBCHoMGpwzrU11lg" SlotId="BQnLrrhJkIfPR2aEmkWQGM" Bounds="126,317" />
+            <Node Bounds="124,340,42,26" Id="RIidw2dZgY0LZjIOwiSusi">
+              <p:NodeReference LastCategoryFullName="RogueSharp.Map`1" LastSymbolSource="RogueSharp.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Clone" />
+                <CategoryReference Kind="AssemblyCategory" Name="Map`1" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="GyIMe1f7z3wMvEVlJl9pCK" Name="Input" Kind="StateInputPin" />
+              <Pin Id="QEytvl2VjFwPfgluwDTyeA" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="D7OKjogBMefOxeUqzpq6rz" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Pad Id="FFEaUT1PiJZPuVbMxmfS0F" SlotId="BQnLrrhJkIfPR2aEmkWQGM" Bounds="162,408" />
           </Canvas>
           <ProcessDefinition Id="BWoxynPV2pVMsWQXCZqcuN" IsHidden="true">
             <Fragment Id="FqncCwkujOCL8nL7XcyMfG" Patch="Rp4FoXmsAr3PU7zvMQqWOs" Enabled="true" />
@@ -687,6 +700,7 @@
             <Fragment Id="QwFXR8G0fPxQQT1jQDk4XP" Patch="TxtN0xocL2LNdiEqVWcEHY" />
             <Fragment Id="BotLFd1L0R6QENq6AATBq6" Patch="KhZRfpQd5qEOhBfKFQyOa4" />
             <Fragment Id="GBLRp0d1xtvOCnrKtO4tFe" Patch="R5OdkciJsb2MUHzubcG5bo" />
+            <Fragment Id="LgUev34OZxbNNf3t5dGhi9" Patch="R7bAs6QcMJDNwOb1JRt0uw" />
           </ProcessDefinition>
           <Slot Id="BQnLrrhJkIfPR2aEmkWQGM" Name="Map" />
           <Link Id="DFJDjOpf7FRMDfJzSuxElk" Ids="OR5KH6uII51MUFKHETziP1,JhrhlQFgCRQPLxaDyZvGWM" />
@@ -991,6 +1005,9 @@
           <Link Id="NQ8NmDShO7RLGmixp62fcc" Ids="QpBUtZKFZusN9Y0LLJsiSL,UpCKPqIiG64M040CZGikrR" />
           <Link Id="GmjaAXfpz0VPx7YH0dsAdD" Ids="N2Pdeni9SCvMJ7OhqRcRBH,H9lK3oYFRD0OXVdW2XTcWf" />
           <Link Id="FdcSRTMHJXtNuj2VsVDUCX" Ids="DsIjk7ZqF1FMjurijOGKR6,KM9olhdGbM4L3sfhMpJMeh" />
+          <Patch Id="R7bAs6QcMJDNwOb1JRt0uw" Name="Clone" ParticipatingElements="HU0jHAx0WqXOb6pbf4aDbz" />
+          <Link Id="MNtbNOprsu8NjEywNFap6Y" Ids="BNtLNFVBCHoMGpwzrU11lg,GyIMe1f7z3wMvEVlJl9pCK" />
+          <Link Id="HU0jHAx0WqXOb6pbf4aDbz" Ids="D7OKjogBMefOxeUqzpq6rz,FFEaUT1PiJZPuVbMxmfS0F" />
         </Patch>
       </Node>
       <Canvas Id="VixWIGxzWJGNJDCBnTuk5n" Name="MapCreation" Position="304,261">
@@ -4765,11 +4782,6 @@
               <ControlPoint Id="RwiOLRQTvKbMBCGlWKC06M" Bounds="516,419" Alignment="Bottom" />
             </Node>
           </Canvas>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="QUJUbxxSGpgMQBBIzPbCCD" IsHidden="true">
             <Fragment Id="NMhJO2i5i6YLwiIjBpv3ap" Patch="How0GJyfhRZQCuRXD9vD5s" Enabled="true" />
             <Fragment Id="PGRZDotZb0ANYiip9Z1VFy" Patch="RBupEU1tdUMLHPeTEjFjGB" />
@@ -4905,8 +4917,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="FLbaQYXM3qzNB84bO8YN3S" Location="VL.CoreLib" Version="2021.4.7" />
-  <NugetDependency Id="HcaygwrHDcAMGRIKJxrAiS" Location="VL.Skia" Version="2021.4.7" />
-  <NugetDependency Id="OQFa8jDDJWXMlHypogizHp" Location="VL.CoreLib.Windows" Version="2021.4.7" />
+  <NugetDependency Id="FLbaQYXM3qzNB84bO8YN3S" Location="VL.CoreLib" Version="2021.4.10" />
+  <NugetDependency Id="HcaygwrHDcAMGRIKJxrAiS" Location="VL.Skia" Version="2021.4.10" />
+  <NugetDependency Id="OQFa8jDDJWXMlHypogizHp" Location="VL.CoreLib.Windows" Version="2021.4.10" />
   <NugetDependency Id="ErMVh0ZE6jwM2TIhXZQt9I" Location="RogueSharp" Version="5.0.0-pre2" />
 </Document>
