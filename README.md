@@ -32,6 +32,7 @@ Field Of View
 
 -Install VL.RogueSharp via nuget 
 In VVVV Gamma open the top left 'grey square' menu > Manage nugets > Commandline
+
 type 'nuget install VL.RogueSharp -version 1.0.3-pre'
 
 -Open the vvvv gamma help browser and search 'Roguesharp' for example patches 
