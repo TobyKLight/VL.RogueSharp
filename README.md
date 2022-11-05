@@ -4,7 +4,7 @@ A vvvv gamma wrapper for the open source RogueSharp library by Faron Bracy
 Nuget https://www.nuget.org/packages/VL.RogueSharp/
 
 -----------------------
-# Origin
+## Origin
 Original library and documentation https://github.com/FaronBracy/RogueSharp
 Referencing this nuget version 5.0.0 pre2 https://www.nuget.org/packages/RogueSharp/5.0.0-pre2
 
@@ -12,7 +12,7 @@ RogueSharp is originally intended for game development of roguelikes.
 It is not a full set of tools to make a game. For example RogueSharp provides the pathfinding but the user would have to create their own movement system using the provided path. 
 
 -----------------------
-# What can it do? 
+## What can it do? 
 RogueSharp has functions useful for reasoning about 2D grids where some cells are walkable or transparent. 
 For example pathfinding and field of view. 
 Also includes a dice rolling function. 
@@ -30,12 +30,12 @@ Field Of View
 ------------------------
 # Install  
 
--Install VL.RogueSharp via nuget 
+* Install VL.RogueSharp via nuget 
 In VVVV Gamma open the top left 'grey square' menu > Manage nugets > Commandline
 
-type 'nuget install VL.RogueSharp -version 1.0.3-pre'
+* type 'nuget install VL.RogueSharp -version 1.0.3-pre'
 
--Open the vvvv gamma help browser and search 'Roguesharp' for example patches 
+* Open the vvvv gamma help browser and search 'Roguesharp' for example patches 
 
 ------------------------
 # Version history
