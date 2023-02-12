@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="NaX2PldZcC3MlENhzPlijS" LanguageVersion="2021.4.7.906" Version="0.128">
+<Document xmlns:p="property" Id="NaX2PldZcC3MlENhzPlijS" LanguageVersion="2022.5.0-0577-gbbf5a07a29" Version="0.128">
   <Patch Id="COAyH358kZhPVyA0iHxASb">
     <Canvas Id="Q9djCdr2DcWP6TlZoPImG2" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -18,13 +18,13 @@
             <p:ColorIndex p:Type="Int32">3</p:ColorIndex>
           </Overlay>
           <Pad Id="A479eWTSI7BLQTOOjPbKy9" Comment="Dice Notation Expression" Bounds="332,145,69,15" ShowValueBox="true" isIOBox="true" Value="2d6">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="315,268,89,88" Id="OI1fVBHCbLwQKsSWsVpFJM">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ProcessStatefulRegion" Name="Cache" />
               <FullNameCategoryReference ID="Primitive" />
@@ -39,7 +39,7 @@
               <Patch Id="P6l0ZTWGKAVNVGHoizjX5V" Name="Create" ManuallySortedPins="true" />
               <Patch Id="RgA4vpiWPpUNjBCH7UGkhO" Name="Then" ManuallySortedPins="true" />
               <Node Bounds="327,301,53,19" Id="U4pEgESZXxuOxFq6tSYx1g">
-                <p:NodeReference LastCategoryFullName="RogueSharp.Dice" LastSymbolSource="VL.RogueSharp.vl">
+                <p:NodeReference LastCategoryFullName="RogueSharp.Dice" LastDependency="VL.RogueSharp.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="DiceRoll" />
                 </p:NodeReference>
@@ -55,7 +55,7 @@
             <ControlPoint Id="NvyMz8I7wjkOKh7ndBytbo" Bounds="389,350" Alignment="Bottom" />
           </Node>
           <Pad Id="MBDvXMxDtooPBmVAUVwocX" Comment="Result" Bounds="326,399,65,25" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -64,7 +64,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="MRaqcUxnQPPMMjl7rKBE1u" Comment="Roll Again" Bounds="315,218,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -73,7 +73,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="Av1B9aTt4RHLZ0h1BBbfur" Bounds="444,195,307,19" ShowValueBox="true" isIOBox="true" Value="for valid expression examples see &#xD;&#xA;">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -82,7 +82,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="R1ZWYXbk6n8MhVT6RNHYRc" Bounds="447,215,246,21" ShowValueBox="true" isIOBox="true" Value="https://ripcode.net/p/dicenotation">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -91,25 +91,25 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="H8B20GPDdHDOooFVoIiAsa" Comment="Minimum possible roll" Bounds="351,439,35,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="CY1LadoUVLFN2JaclRfKGj" Comment="Maximum Possible Roll" Bounds="374,464,39,15" ShowValueBox="true" isIOBox="true" Value="0">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="UWYCAwUZ8gfLvwJskxEEum" Comment="Error if it does not like your expression" Bounds="392,499,102,12" ShowValueBox="true" isIOBox="true" Value="text">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Si3F5TKRgFTPhDElkwrhjl" Bounds="442,262,237,136" ShowValueBox="true" isIOBox="true" Value="Note that combining multiple dice rolls has a different probability distribution then 'plain' random number generation.&#xD;&#xA;&#xD;&#xA;Eg probability of snake eyes on 2d6 is not 1/12 but 1/36">
-            <p:TypeAnnotation>
+          <Pad Id="Si3F5TKRgFTPhDElkwrhjl" Bounds="442,262,237,136" ShowValueBox="true" isIOBox="true" Value="Note that combining multiple dice rolls has a different probability distribution then 'plain' random number generation.&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -138,7 +138,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="OzO89Wl2tWjNX9q18JSs5Q" Location="VL.CoreLib" Version="2021.4.7" />
+  <NugetDependency Id="OzO89Wl2tWjNX9q18JSs5Q" Location="VL.CoreLib" Version="2022.5.0-0577-gbbf5a07a29" />
   <NugetDependency Id="LHjVmZv3rOcPIdR2VtxzN7" Location="VL.RogueSharp" Version="0.0.0.0" />
   <NugetDependency Id="DePoAaQrbi1LUSw4ZdVDCq" Location="RogueSharp" Version="5.0.0-pre2" />
 </Document>

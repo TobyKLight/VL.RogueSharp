@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="G7haagdnqGWOQgMRg3YLPu" LanguageVersion="2021.4.7.906" Version="0.128">
+<Document xmlns:p="property" Id="G7haagdnqGWOQgMRg3YLPu" LanguageVersion="2022.5.0-0577-gbbf5a07a29" Version="0.128">
   <Patch Id="COAyH358kZhPVyA0iHxASb">
     <Canvas Id="Q9djCdr2DcWP6TlZoPImG2" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -15,7 +15,7 @@
       <Patch Id="VltiJwnAr5XPZFCiQ6vzVc">
         <Canvas Id="NLLDggIJmc0OByoBsi9dWi" CanvasType="Group">
           <Node Bounds="436,-16,150,181" Id="MHPlvdC97jFQCHwM5DIH6W">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ProcessStatefulRegion" Name="Cache" />
               <FullNameCategoryReference ID="Primitive" />
@@ -32,7 +32,7 @@
               <Patch Id="VeBzzgUuN1vLSGu0jXAOsv" Name="Create" ManuallySortedPins="true" />
               <Patch Id="Ft1oXWqPNHyOvlmpUEdxyl" Name="Then" ManuallySortedPins="true" />
               <Node Bounds="451,42,85,26" Id="Si5dBPHIlsDO5NJkCUhQAG">
-                <p:NodeReference>
+                <p:NodeReference LastCategoryFullName="RogueSharp.RogueMap" LastDependency="VL.RogueSharp.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="RogueMap" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
@@ -44,15 +44,17 @@
                 <Pin Id="Hv8x8pjaYVYMgFLQAx14dc" Name="Output" Kind="StateOutputPin" />
               </Node>
               <Node Bounds="448,114,65,19" Id="McZjIj6iPebPoj8B9mmXLp">
-                <p:NodeReference LastCategoryFullName="RogueSharp.MapCreation" LastSymbolSource="VL.RogueSharp.vl">
+                <p:NodeReference LastCategoryFullName="RogueSharp.MapCreation" LastDependency="VL.RogueSharp.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="SetBorders" />
                 </p:NodeReference>
                 <Pin Id="UtWLrmXgeYUMG93HM7sbBY" Name="Input" Kind="InputPin" />
+                <Pin Id="Fu4p82VpXuHMMDj0sodc9C" Name="Is Transparent" Kind="InputPin" />
+                <Pin Id="PS08kHDvPmGOzRjVtUdyRQ" Name="Is Walkable" Kind="InputPin" />
                 <Pin Id="Lagk9WbMicrMiSuSPmRPyN" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="449,86,125,19" Id="OqhMvt8cTtQLgk8eZ9GhkE">
-                <p:NodeReference LastCategoryFullName="RogueSharp.MapCreation" LastSymbolSource="VL.RogueSharp.vl">
+                <p:NodeReference LastCategoryFullName="RogueSharp.MapCreation" LastDependency="VL.RogueSharp.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="SimplexNoise" />
                   <CategoryReference Kind="Category" Name="MapCreation" NeedsToBeDirectParent="true" />
@@ -69,17 +71,17 @@
             </Patch>
           </Node>
           <Pad Id="POuSdI6oihpMyNMdtVKOTK" Comment="Width" Bounds="454,-131,35,15" ShowValueBox="true" isIOBox="true" Value="38">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="EPoxb2DvLouMcsVmVITdxf" Comment="Height" Bounds="476,-111,35,15" ShowValueBox="true" isIOBox="true" Value="27">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="458,705,57,19" Id="NwrvIYK72ySNpuP25kwOVL">
-            <p:NodeReference LastCategoryFullName="RogueSharp" LastSymbolSource="VL.RogueSharp.vl">
+            <p:NodeReference LastCategoryFullName="RogueSharp" LastDependency="VL.RogueSharp.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="DrawMap (RogueMap Preview ASCII Skia)" />
             </p:NodeReference>
@@ -102,54 +104,56 @@
             <p:ColorIndex p:Type="Int32">5</p:ColorIndex>
           </Overlay>
           <Pad Id="QfTwoEx9ws5ME55po1hr7t" SlotId="PRuiGu0N0HoMNbkOzC0PJ4" Bounds="533,796" />
-          <Pad Id="DKjEXV5TrGSOpFHcFioWP5" SlotId="PRuiGu0N0HoMNbkOzC0PJ4" Bounds="542,365" />
+          <Pad Id="DKjEXV5TrGSOpFHcFioWP5" SlotId="PRuiGu0N0HoMNbkOzC0PJ4" Bounds="550,364" />
           <Pad Id="VeqxcmukgFNOvDPXrMap6I" Comment="Success" Bounds="516,527,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="HhbIMoATcrLM1EN2nQ6SkF" Comment="Shift" Bounds="566,-55,35,28" ShowValueBox="true" isIOBox="true" Value="79.33, 49.77">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Vector2" />
               <FullNameCategoryReference ID="2D" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="UUyPleRvU7RNdlMLDu6P27" Comment="Threshold" Bounds="535,-86,35,15" ShowValueBox="true" isIOBox="true" Value="0.33">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Overlay Id="P2S2kUcsa5rQXugL8jBtHD" Name="Field Of View Calc" Bounds="352,323,430,291">
             <p:ColorIndex p:Type="Int32">7</p:ColorIndex>
           </Overlay>
-          <Pad Id="UYSXI9QGVykOZ5eglniyUd" Comment="Position" Bounds="539,380,35,28" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="UYSXI9QGVykOZ5eglniyUd" Comment="Position" Bounds="547,381,35,28" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="517,486,70,19" Id="MqU16XpDz5PQZ5dYOyEIVu">
-            <p:NodeReference LastCategoryFullName="RogueSharp" LastSymbolSource="VL.RogueSharp.vl">
+            <p:NodeReference LastCategoryFullName="RogueSharp" LastDependency="VL.RogueSharp.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FieldOfView" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="J4DjGFq3OPkMvU9lsrNaMl" Name="Map" Kind="InputPin" />
-            <Pin Id="FGBKVCrmxhKPDl0OSikIJG" Name="Position" Kind="InputPin" />
+            <Pin Id="Mne39XQwYjUOsXxRP4CIwE" Name="Position" Kind="InputPin" />
             <Pin Id="JGkqrrEI5ABOCq0X79Fugl" Name="Radius" Kind="InputPin" />
             <Pin Id="LsHjGzMoZDHNda5eiCTUPd" Name="Light Walls" Kind="InputPin" />
             <Pin Id="DHijnsmmSZDMEeAJNCdkno" Name="Success" Kind="OutputPin" />
             <Pin Id="Rd3xNNQSLvmMxniNzcPVcs" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="584,537,45,19" Id="EglSYWwoz75QcwJyrPE8lj">
-            <p:NodeReference LastCategoryFullName="RogueSharp" LastSymbolSource="VL.RogueSharp.vl">
+            <p:NodeReference LastCategoryFullName="RogueSharp" LastDependency="VL.RogueSharp.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Cells (Split)" />
             </p:NodeReference>
             <Pin Id="NSLy3BNy3KePyCCBORK2Gn" Name="Input" Kind="InputPin" />
-            <Pin Id="M4lz20S21KULhnG3ps4UT1" Name="Position" Kind="OutputPin" />
+            <Pin Id="IdanidQ2BS3LzabniMoQ3w" Name="X" Kind="OutputPin" />
+            <Pin Id="CoHq8f9zAgrPI3eTk5mt6W" Name="Y" Kind="OutputPin" />
+            <Pin Id="O9TlTiVXX24OnbtqjbyKWz" Name="XY" Kind="OutputPin" />
             <Pin Id="MoRjTgQ8pRmMHXjyS0bokJ" Name="Is Transparent" Kind="OutputPin" />
             <Pin Id="LsE2Lpip0lNN86RVufg3hw" Name="Is Walkable" Kind="OutputPin" />
           </Node>
-          <Pad Id="TBupqwgQiZrPsb3j047NBO" Comment="Radius" Bounds="566,415,34,15" ShowValueBox="true" isIOBox="true" Value="17">
-            <p:TypeAnnotation>
+          <Pad Id="TBupqwgQiZrPsb3j047NBO" Comment="Radius" Bounds="582,417,34,15" ShowValueBox="true" isIOBox="true" Value="17">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Integer32" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Ap3yr6CgOm6LbV7Aem0O3S" Comment="Light Walls" Bounds="585,448,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+          <Pad Id="Ap3yr6CgOm6LbV7Aem0O3S" Comment="Light Walls" Bounds="615,448,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -158,11 +162,11 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="432,898,145,19" Id="MPQrCFAkrFiO5pOeY0msiH">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Renderer" />
             </p:NodeReference>
-            <Pin Id="DuFUSVnK8iiPTNQZdj3p6u" Name="Bounds" Kind="InputPin" DefaultValue="961, 185, 312, 436" />
+            <Pin Id="DuFUSVnK8iiPTNQZdj3p6u" Name="Bounds" Kind="InputPin" DefaultValue="1405, 81, 312, 436" />
             <Pin Id="NX2dm59Kd7oOZwD5KpxWkY" Name="Input" Kind="InputPin" />
             <Pin Id="HYqzdIyAKNeMsRFSyqoufB" Name="Color" Kind="InputPin" />
             <Pin Id="GS4xz5uRGHDMRR5PvLokrX" Name="Clear" Kind="InputPin" />
@@ -175,7 +179,7 @@
             <Pin Id="O1VAMBtDVN8LqnkiIsZWoY" Name="Render Time" Kind="OutputPin" />
           </Node>
           <Node Bounds="454,851,125,19" Id="Ax7tOgPXxeGLhGZ8nRX6Om">
-            <p:NodeReference LastCategoryFullName="Graphics.Skia.Transform" LastSymbolSource="VL.Skia.vl">
+            <p:NodeReference LastCategoryFullName="Graphics.Skia.Transform" LastDependency="VL.Skia.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Camera" />
             </p:NodeReference>
@@ -191,7 +195,7 @@
             <Pin Id="VRfLf627XmrOhWcXFwtiGc" Name="Idle" Kind="OutputPin" />
           </Node>
           <Node Bounds="431,961,105,19" Id="DMO3y1A9PCWNbDF3HVHbTQ">
-            <p:NodeReference LastCategoryFullName="System.Windows" LastSymbolSource="VL.CoreLib.Windows.vl">
+            <p:NodeReference LastCategoryFullName="System.Windows" LastDependency="VL.CoreLib.Windows.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SetWindowState" />
               <CategoryReference Kind="Category" Name="Windows" NeedsToBeDirectParent="true" />
@@ -205,7 +209,7 @@
             <Pin Id="SXvJ9v6HwdyMX3nWaTQMe6" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="539,679,65,19" Id="HpZC2uLLqSxODrbG3xv8pk">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="FromValue" />
               <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -237,21 +241,21 @@
         <Link Id="ALKb1fxsNrcMUA7InywBtZ" Ids="DKjEXV5TrGSOpFHcFioWP5,UYSXI9QGVykOZ5eglniyUd" />
         <Link Id="UDqoEaufy07OhHjJqZVJLv" Ids="GajUgpDNX2pM3x32wgy5X1,NU2vDLjbfrlOT58Vq2Fxro" />
         <Link Id="OtrP9w5bXGDMWrghU2fe8n" Ids="GajUgpDNX2pM3x32wgy5X1,J4DjGFq3OPkMvU9lsrNaMl" />
-        <Link Id="OxvVZkED2hENkoHR2RIneP" Ids="UYSXI9QGVykOZ5eglniyUd,FGBKVCrmxhKPDl0OSikIJG" />
         <Link Id="Jm9EOixUZyZM9mIVR8rCZ3" Ids="Rd3xNNQSLvmMxniNzcPVcs,NSLy3BNy3KePyCCBORK2Gn" />
         <Link Id="HwSARyMlCn9QGIZcuRJ9ZO" Ids="DHijnsmmSZDMEeAJNCdkno,VeqxcmukgFNOvDPXrMap6I" />
         <Link Id="Qqu2fGbpKoOLmOY4sr95mf" Ids="TBupqwgQiZrPsb3j047NBO,JGkqrrEI5ABOCq0X79Fugl" />
         <Link Id="CRzTTNrdTnnMOsE4a2nqxG" Ids="Ap3yr6CgOm6LbV7Aem0O3S,LsHjGzMoZDHNda5eiCTUPd" />
         <Link Id="B4iYQJw9VxgPNj29xMWGip" Ids="DGvBzhG9gqBNcIk3vC1BMA,NX2dm59Kd7oOZwD5KpxWkY" />
         <Link Id="SRitTSuTRLYMdyai5TKJOQ" Ids="QGWvT6w7AM0N2YRrjWgIFR,CZO8Zfc4OsNNrrpANcKQiC" />
-        <Link Id="OyzgsBljUovOdKr62JczZn" Ids="M4lz20S21KULhnG3ps4UT1,KkKhOCTfC7DOgQGLgmF1Fi" />
         <Link Id="Eq5qK1C0DUGMfmcWKmoDU6" Ids="NlFpfzv1ZLNO1jYOOWghxE,Mma3IQkGPzoLbiHbnHSzoq" />
         <Link Id="Pketeqsq2FOMWXnFhX7QMK" Ids="TmDsPQOO9RDN0dVKMSgww2,NJ33TRIQGAPOP9YETTnxOx" />
+        <Link Id="EuU0JoQqjLmMPuODuFgMUc" Ids="O9TlTiVXX24OnbtqjbyKWz,KkKhOCTfC7DOgQGLgmF1Fi" />
+        <Link Id="C8ZTmxVFh8vMXPZJAHB9Cd" Ids="UYSXI9QGVykOZ5eglniyUd,Mne39XQwYjUOsXxRP4CIwE" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="OzO89Wl2tWjNX9q18JSs5Q" Location="VL.CoreLib" Version="2021.4.7" />
+  <NugetDependency Id="OzO89Wl2tWjNX9q18JSs5Q" Location="VL.CoreLib" Version="2022.5.0-0577-gbbf5a07a29" />
   <NugetDependency Id="LHjVmZv3rOcPIdR2VtxzN7" Location="VL.RogueSharp" Version="0.0.0.0" />
-  <NugetDependency Id="ClpuUa3mWcrOsa2kl2WKb3" Location="VL.Skia" Version="2021.4.7" />
-  <NugetDependency Id="KJduXvcTmK4MyZc0vuf21a" Location="VL.CoreLib.Windows" Version="2021.4.7" />
+  <NugetDependency Id="ClpuUa3mWcrOsa2kl2WKb3" Location="VL.Skia" Version="2022.5.0-0577-gbbf5a07a29" />
+  <NugetDependency Id="KJduXvcTmK4MyZc0vuf21a" Location="VL.CoreLib.Windows" Version="2022.5.0-0577-gbbf5a07a29" />
 </Document>
